@@ -180,6 +180,12 @@ void AP_MotorsMatrix::output_to_motors()
             rc_write(i, output_to_pwm(_actuator[i]));
         }
     }
+
+    rc_write(0, 1500);
+    rc_write(1, 1500);
+    rc_write(6, 1500);
+    rc_write(7, 1500);
+
 }
 
 // get_motor_mask - returns a bitmask of which outputs are being used for motors (1 means being used)
