@@ -859,11 +859,11 @@ bool AP_MotorsMatrix::setup_octa_matrix(motor_frame_type frame_type)
         _frame_type_string = "PLUS";
         static const AP_MotorsMatrix::MotorDef motors[] {
             {    0, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   1 },
-            {  180, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   5 },
-            {   45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  2 },
-            {  135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  4 },
-            {  -45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  8 },
-            { -135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  6 },
+            {  180, 0,   5 },
+            {   0, 0,  2 },
+            {  90, 0,  4 },
+            {  -90, 0,  8 },
+            { 180, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  6 },
             {  -90, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   7 },
             {   90, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   3 },
         };
